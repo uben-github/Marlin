@@ -486,9 +486,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // LayerFused X301
-  #define DEFAULT_Kp  7.74
-  #define DEFAULT_Ki  0.38
-  #define DEFAULT_Kd 39.66
+  #define DEFAULT_Kp 16.62
+  #define DEFAULT_Ki  1.44
+  #define DEFAULT_Kd 47.86
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
