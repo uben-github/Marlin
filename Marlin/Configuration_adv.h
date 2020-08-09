@@ -1618,7 +1618,7 @@
   #define LIN_ADVANCE_K   0.05    // PLA, Unit: mm compression per 1mm/s extruder speed
   //#define LIN_ADVANCE_K 0.14    // ABS, Unit: mm compression per 1mm/s extruder speed
   //#define LA_DEBUG            // If enabled, this will generate debug information output over USB.
-  #define EXPERIMENTAL_SCURVE // Enable this option to permit S-Curve Acceleration
+  //#define EXPERIMENTAL_SCURVE // Enable this option to permit S-Curve Acceleration
 #endif
 
 // @section leveling
