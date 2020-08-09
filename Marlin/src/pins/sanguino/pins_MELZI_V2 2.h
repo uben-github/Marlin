@@ -13,9 +13,27 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  *
  */
 #pragma once
 
-void USB_Hook_init();
+/**
+ * Melzi V2.0 as found at https://www.reprap.org/wiki/Melzi
+ */
+
+#define BOARD_INFO_NAME "Melzi V2"
+
+#if HAS_GRAPHICAL_LCD
+  #ifndef BOARD_ST7920_DELAY_1
+    #define BOARD_ST7920_DELAY_1 DELAY_NS(0)
+  #endif
+  #ifndef BOARD_ST7920_DELAY_2
+    #define BOARD_ST7920_DELAY_2 DELAY_NS(188)
+  #endif
+  #ifndef BOARD_ST7920_DELAY_3
+    #define BOARD_ST7920_DELAY_3 DELAY_NS(0)
+  #endif
+#endif
+
+#include "pins_MELZI.h"
